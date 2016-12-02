@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    
+
+    
+    {% include head.html %}
+    {% include header.html %}
+    {% include footer.html %}
+    {% for cours in site.cours limit:3 %}
+    {% endfor %}
+
+    
+    <body>
+         
+       <main>
+           {{ content }} 
+           
+           
+        </main>
+        <footer>{{site.copyright}}</footer>
+    </body>
+    
+</html>
