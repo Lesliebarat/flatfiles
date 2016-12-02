@@ -1,2 +1,10 @@
 title: Courscms
 description: résumé séance du 14/10
+
+permalink: /:day-:month-:year-:title
+
+collections: -cours
+
+collections: 
+  cours:
+    output: true
