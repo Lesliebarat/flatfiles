@@ -1,0 +1,56 @@
+<h1 id="les-blogs">LES BLOGS</h1>
+
+<h2 id="oragnisation-du-blog">Oragnisation du blog</h2>
+
+<p>Suite à la génération du blog, Jekyll a créé le minimum pour le générer.</p>
+
+<h3 id="le-fichier-config">Le fichier _config</h3>
+
+<p>contient la configuration générale du blog.</p>
+
+<h3 id="le-dossier-layout">le dossier _layout</h3>
+
+<p>contient les templates qui serviront à générer les pages.</p>
+
+<h3 id="le-dossier-post">Le dossier _post</h3>
+
+<p>contient les articles.</p>
+
+<h3 id="le-dossier-site">le dossier _site</h3>
+<p>contient le blog généré. C’est ce dossier qu’il faudra placer sur le serveur pour publier le blog.</p>
+
+<h2 id="crer-des-articles">Créer des articles</h2>
+
+<p>Les post peuvent être écris en Markdown ou en Textile.
+Pour ajouter un article, il faut créer un fichier :
+ANNEE-MOIS-JOUR-titre.md ou ANNEE-MOIS-JOUR-titre.textile (par exemple 2013-03-10-Titre-de-mon-article.md). 
+Les pages commence par quelques lignes de YAML pour la configuration. Les formats Markdown et Textile sont simples, il n’y a pas de code HTML à écrire, le code est généré lors de la génération de la page.</p>
+
+<h3 id="exemple">Exemple</h3>
+
+<hr />
+<p>published: true
+layout: post
+title: “Tutoriel : Créer un blog statique avec Jekyll”
+category: jekyll
+—</p>
+<h4 id="mon-titre-en-h4">Mon titre en H4</h4>
+<p>Bonjour, je suis un article, 
+je peux avoir des mots en <em>italique</em>, 
+d’autres en <strong>gras</strong> et des <a href="http://www.jekyllrb.com">liens</a>.</p>
+
+<h2 id="cration-de-pages">Création de pages</h2>
+
+<p>Pour créer une page, il faut placer un fichier HTML à la racine du projet. Lors de la génération du blog, ce fichier sera placé dans le dossier _site.</p>
+
+<h2 id="template">Template</h2>
+
+<p>Le principe est d’avoir des fichiers html dans le dossier _layouts. Le fichier default.html contient par exemple la structure des pages (balise head, …). Le contenu des pages sera copier à l’emplacement de la variable content :</p>
+
+<h2 id="crer-des-articles">Créer des articles</h2>
+
+<p>Les post peuvent être écris en Markdown ou en Textile.
+Pour ajouter un article, il faut créer un fichier :
+ANNEE-MOIS-JOUR-titre.md ou ANNEE-MOIS-JOUR-titre.textile (par exemple 2013-03-10-Titre-de-mon-article.md).</p>
+
+<p>Il y a un système d’héritage très simple entre les templates. Par exemple le fichier post.html hérite du fichier default.html</p>
